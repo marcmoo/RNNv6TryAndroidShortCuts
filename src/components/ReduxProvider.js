@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import store from '../store';
 
 export default function ReduxProvider(Component) {
-    return (Props) => (
+    return (props) => (
         <Provider store={store}>
             <Component {...props} />
         </Provider>
