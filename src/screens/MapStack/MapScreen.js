@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const HomeScreen = (props) => {
+const MapScreen = (props) => {
   return (
     <View style={{flex: 1, backgroundColor: 'red'}}>
       <Text>Home Screen</Text>
@@ -10,4 +10,4 @@ const HomeScreen = (props) => {
   );
 };
 
-export default HomeScreen;
+export default MapScreen;
