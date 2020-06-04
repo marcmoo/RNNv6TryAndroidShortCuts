@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const HomeScreen = (props) => {
   return (
-    <View style={styles.home}>
+    <View style={{flex: 1, backgroundColor: 'red'}}>
       <Text>Home Screen</Text>
     </View>
   );
