@@ -18,7 +18,6 @@ function getUiSettings() {
     },
     topBar: {
       visible: true,
-      drawBehind: isAndroid,
       title: {
         color: colors.themeBlue,
         fontSize: 18,
