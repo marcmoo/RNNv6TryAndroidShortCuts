@@ -19,13 +19,13 @@ function getUiSettings() {
       visible: true,
       drawBehind: isAndroid,
       title: {
-        color: colors.blue,
+        color: colors.themeBlue,
         fontSize: 18,
         alignment: 'center'
       },
       noBorder: true,
       backButton: {
-        color: colors.blue,
+        color: colors.themeBlue,
       },
       background: {
         color: colors.white

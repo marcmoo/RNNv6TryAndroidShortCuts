@@ -1,6 +1,6 @@
 // In index.js of a new project
 import React, { useState, useEffect } from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import { View, Button, StyleSheet, SafeAreaView } from 'react-native';
 import { setLoginNaviStack } from '../../../index';
 
 const MyAccountScreen = (props) => {
@@ -11,10 +11,21 @@ const MyAccountScreen = (props) => {
     }
   }, [loggedIn])
   return (
-    <View style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1 }}>
       <Button onPress={() => setLoggedIn(false)} title ='Sign Out' />
-    </View>
+    </SafeAreaView>
   );
 };
+
+MyAccountScreen.options = () => ({
+ topBar: {
+   title: {
+     text: "My Screen"
+   }
+ },
+ bottomTabs: {
+   drawBehind: false
+ }
+});
 
 export default MyAccountScreen;

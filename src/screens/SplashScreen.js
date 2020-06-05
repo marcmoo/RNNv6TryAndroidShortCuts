@@ -12,9 +12,16 @@ const SplashScreen = (props) => {
   }, [loggedIn])
   return (
     <View style={{flex: 1, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center'}}>
-        <Button onPress={() => setLoggedIn(true)} title ='Sign In'>  </Button>
+        <Button onPress={() => setLoggedIn(true)} title ='Sign In' />
       </View>
   );
 };
+
+
+SplashScreen.options = () => ({
+  topBar: {
+    visible: false
+  }
+ });
 
 export default SplashScreen;
