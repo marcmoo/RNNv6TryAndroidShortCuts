@@ -13,7 +13,8 @@ Navigation.events().registerAppLaunchedListener(() => {
 function getUiSettings() {
   Navigation.setDefaultOptions({
     statusBar: {
-      backgroundColor: 'red'
+      backgroundColor: colors.white,
+      style: 'dark'
     },
     topBar: {
       visible: true,
@@ -26,10 +27,15 @@ function getUiSettings() {
       noBorder: true,
       backButton: {
         color: colors.themeBlue,
+        showTitle: false
       },
       background: {
         color: colors.white
-      }
+      },
+      layout: {
+        orientation: ['portrait']
+      },
+
     },
     bottomTab: {
       iconColor: colors.bottomTab.unSelected,
